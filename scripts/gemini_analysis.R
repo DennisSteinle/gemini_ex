@@ -23,6 +23,7 @@ perform_analysis = function() {
     res = analyse_prompt_file(file, config_df=config_df, api_key = API_KEY)
     out_file = paste0(outdir, "/", prompt_name,".Rds")
     saveRDS(res, out_file)
+    Sys.sleep(45)
   }
 
   cat("\n\nFINISHED\n\n")
