@@ -24,7 +24,7 @@ perform_analysis = function() {
     res = analyse_prompt_file(file, config_df=config_df, api_key = API_KEY)
     out_file = paste0(outdir, "/", prompt_name,".json")
     write_json(res, out_file)
-    Sys.sleep(8)
+    Sys.sleep(20)
   }
 
   cat("\n\nFINISHED\n\n")
